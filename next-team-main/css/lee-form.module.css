@@ -1,0 +1,517 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.error {
+  color: red;
+  height: 10px;
+  position: relative;
+  margin-left: 5px;
+  margin-top: 6px;
+}
+
+.listGroupItem {
+  height: 57px;
+  padding: 0 !important;
+  cursor: pointer !important;
+  border: none !important;
+  border-bottom: 1px solid #dee2e6 !important;
+}
+.listGroupItem:hover {
+  background-color: #c7def5;
+}
+
+.myloginform {
+  width: 500px;
+  background-color: #fcfcfc;
+  border: 2px solid rgb(142, 38, 38);
+  border-radius: 0.2em;
+}
+.myloginform h2 {
+  border-bottom: 1px solid #dee2e6;
+  padding-top: 6px;
+  padding-bottom: 20px;
+  color: rgb(142, 38, 38);
+}
+.myloginform button {
+  background: #e96d3f;
+  color: #FFFFFF;
+}
+.myloginform button:hover {
+  background: rgb(142, 38, 38);
+  color: #FFFFFF;
+}
+.myloginform .error {
+  color: red;
+  height: 10px;
+  position: relative;
+  margin-left: 5px;
+  margin-top: 6px;
+}
+
+.myLoginModal h3 {
+  position: relative;
+  top: 12px;
+  padding-top: 10px;
+  color: rgb(142, 38, 38);
+  padding-left: 5px;
+}
+.myLoginModal .btnclose {
+  padding-top: 13px;
+  position: relative;
+  top: -20px;
+}
+.myLoginModal .body {
+  position: relative;
+  top: -5px;
+  padding: 0px 26px 2px 23px;
+}
+.myLoginModal .attr {
+  font-weight: 500;
+  font-size: 16px;
+}
+.myLoginModal .loginbtn {
+  margin-top: 6px;
+  background: #e96d3f;
+  color: #FFFFFF;
+}
+.myLoginModal .loginbtn:hover {
+  background: rgb(142, 38, 38);
+  color: #FFFFFF;
+}
+.myLoginModal p {
+  font-size: 19px;
+}
+.myLoginModal .error {
+  color: red !important;
+  font-size: 16px;
+  height: 12px;
+  position: relative;
+  top: 10px;
+  margin-left: 5px;
+}
+
+.profilesStyle {
+  background-color: #ffffff;
+}
+.profilesStyle a {
+  text-decoration: none !important;
+  margin: 0;
+  padding: 0;
+}
+.profilesStyle .probtn {
+  height: 40px;
+  border: 1px solid #F5F5F5;
+  border-radius: 0.3rem;
+  background-color: #e96d3f;
+  color: #ffffff;
+  font-weight: 600;
+}
+.profilesStyle .probtn:hover {
+  background-color: rgb(142, 38, 38);
+  color: #ffffff !important;
+}
+.profilesStyle .libtn {
+  height: 100%;
+  width: 100%;
+  border: none;
+  background-color: #FFF;
+}
+.profilesStyle .libtn:hover {
+  background-color: #c7def5;
+}
+.profilesStyle .photobtn {
+  height: 40px;
+  border: 1px solid #F5F5F5;
+  border-radius: 0.3rem;
+  background: rgb(126, 186, 234) !important;
+  color: #ffffff;
+  font-weight: 600;
+}
+.profilesStyle .photobtn:hover {
+  background-color: rgb(142, 38, 38) !important;
+  color: #ffffff !important;
+}
+.profilesStyle .card {
+  border: 1px solid rgb(142, 38, 38);
+  box-shadow: 8px 8px 0 0 rgb(255, 220, 220);
+  transition: all 0.3s ease;
+}
+.profilesStyle .card:hover {
+  transform: translateY(-5px);
+}
+.profilesStyle .card .title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: rgb(142, 38, 38);
+  margin: 14px 0px 30px 0px;
+  text-align: center;
+}
+
+.storeInfo {
+  margin: 0 auto;
+  background-color: #FFF !important;
+  background-color: #F0F0F0;
+}
+.storeInfo a {
+  text-decoration: none !important;
+  margin: 0;
+  padding: 0;
+}
+.storeInfo button {
+  height: 40px;
+  border: 1px solid #F5F5F5;
+  border-radius: 0.3rem;
+  background-color: #e96d3f;
+  color: #ffffff;
+  font-weight: 600;
+}
+.storeInfo button:hover {
+  background-color: rgb(142, 38, 38);
+  color: #ffffff !important;
+}
+.storeInfo .infoCard {
+  min-height: 960px;
+  border: 1px solid rgb(142, 38, 38);
+  box-shadow: 8px 8px 0 0 rgb(255, 220, 220);
+  transition: all 0.3s ease;
+}
+.storeInfo .infoCard:hover {
+  transform: translateY(-5px);
+}
+.storeInfo .infoCard .title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: rgb(142, 38, 38);
+  text-align: center;
+}
+.storeInfo .productsCard {
+  min-height: 960px;
+  border: 1px solid rgb(142, 38, 38);
+  box-shadow: 8px 8px 0 0 rgb(255, 220, 220);
+  transition: all 0.3s ease;
+}
+.storeInfo .productsCard:hover {
+  transform: translateY(-5px);
+}
+.storeInfo .productsCard .title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: rgb(142, 38, 38);
+  text-align: center;
+}
+.storeInfo .iconWithMargin {
+  margin-right: 4px;
+}
+.storeInfo .btnLike {
+  background-color: #cbcbcb;
+  color: red;
+}
+.storeInfo .btnLike:hover {
+  color: #e96d3f;
+}
+.storeInfo .textBlack {
+  color: rgb(33, 32, 32);
+}
+
+.registerForm {
+  width: 500px;
+  background-color: #fcfcfc;
+  border: 2px solid rgb(142, 38, 38);
+  border-radius: 0.2em;
+}
+.registerForm h2 {
+  border-bottom: 1px solid #dee2e6;
+  padding-top: 6px;
+  padding-bottom: 20px;
+  color: rgb(142, 38, 38);
+}
+.registerForm button {
+  background: #e96d3f;
+  color: #FFFFFF;
+}
+.registerForm button:hover {
+  background: rgb(142, 38, 38);
+  color: #FFFFFF;
+}
+
+.registerModal .body {
+  position: relative;
+  top: -15px;
+}
+.registerModal h3 {
+  position: relative;
+  top: 12px;
+  padding-top: 10px;
+  color: rgb(142, 38, 38);
+  padding-left: 8px;
+}
+.registerModal .resbtn {
+  background: #e96d3f;
+  color: #FFFFFF;
+}
+.registerModal .resbtn:hover {
+  background: rgb(142, 38, 38);
+  color: #FFFFFF;
+}
+.registerModal .btnclose {
+  padding-top: 13px;
+  position: relative;
+  top: -20px;
+}
+.registerModal .error {
+  color: red;
+  font-size: 16px;
+  height: 10px;
+  position: relative;
+  top: 6px;
+}
+
+.updateModal {
+  width: 446px;
+  background-color: #fcfcfc;
+  border-radius: 0.2em;
+}
+.updateModal h3 {
+  font-weight: 600;
+  border-bottom: 1px solid #dee2e6;
+  padding-top: 6px;
+  padding-bottom: 20px;
+  color: rgb(142, 38, 38);
+}
+.updateModal button {
+  background: #e96d3f;
+  color: #FFFFFF;
+}
+.updateModal button:hover {
+  background: rgb(142, 38, 38);
+  color: #FFFFFF;
+}
+
+.messageBox {
+  width: 95%;
+  height: 630px;
+  margin: 0px auto;
+  background-color: #fcfcfc;
+  border: 2px solid rgb(142, 38, 38);
+  border-radius: 0.2em;
+}
+.messageBox h2 {
+  border-bottom: 1px solid #dee2e6;
+  padding-top: 6px;
+  padding-bottom: 20px;
+  color: rgb(142, 38, 38);
+}
+.messageBox button {
+  background: #e96d3f;
+  color: #FFFFFF;
+}
+.messageBox button:hover {
+  background: rgb(142, 38, 38);
+  color: #FFFFFF;
+}
+
+.forgetForm {
+  width: 550px;
+  background-color: #fcfcfc;
+  border: 2px solid rgb(142, 38, 38);
+  border-radius: 0.2em;
+}
+.forgetForm h3 {
+  border-bottom: 1px solid #dee2e6;
+  padding-top: 6px;
+  padding-bottom: 20px;
+  color: rgb(142, 38, 38);
+}
+.forgetForm button {
+  background: #e96d3f;
+  color: #FFFFFF;
+}
+.forgetForm button:hover {
+  background: rgb(142, 38, 38);
+  color: #FFFFFF;
+}
+
+.googleFillModal {
+  width: 445px;
+  background-color: #fcfcfc;
+  border: 2px solid rgb(142, 38, 38);
+  border-radius: 0.2em;
+}
+.googleFillModal button {
+  display: block;
+  margin: 0 auto;
+  background: #e96d3f;
+  color: #FFFFFF;
+}
+.googleFillModal button:hover {
+  background: rgb(142, 38, 38);
+  color: #FFFFFF;
+}
+
+.logoutButton button {
+  padding: 7px 13px;
+  background: #e96d3f;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0.3rem;
+}
+.logoutButton button:hover {
+  background: rgb(142, 38, 38);
+  color: #FFFFFF;
+}
+
+.googleLoginButton {
+  padding: 3px 8px 2px 3px;
+  background: rgb(126, 186, 234) !important;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0.3rem;
+}
+.googleLoginButton:hover {
+  background: rgb(142, 38, 38) !important;
+  color: #FFFFFF;
+}
+
+.chat__footer {
+  padding: 10px;
+  background-color: #f9f5eb;
+  height: 10vh;
+}
+.chat__footer .form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.chat__footer .message {
+  width: 80%;
+  height: 100%;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  outline: none;
+  padding: 15px;
+}
+.chat__footer .sendBtn {
+  width: 110px;
+  background-color: #e96d3f;
+  padding: 8px;
+  border: none;
+  outline: none;
+  border-radius: 0.2rem;
+  color: #eae3d2;
+  cursor: pointer;
+}
+.chat__footer .sendBtn:hover {
+  background-color: rgb(142, 38, 38);
+}
+
+.chat__mainHeader {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: rgb(142, 38, 38);
+}
+.chat__mainHeader .leaveChat__btn {
+  padding: 9px;
+  width: 130px;
+  border: none;
+  outline: none;
+  border-radius: 0.2rem;
+  background-color: rgb(126, 186, 234);
+  cursor: pointer;
+  color: #eae3d2;
+}
+.chat__mainHeader .leaveChat__btn:hover {
+  background-color: rgb(142, 38, 38);
+}
+
+.message__container > * {
+  margin: 0 10px;
+  margin-bottom: 10px;
+}
+
+.message__container {
+  height: 80vh;
+  overflow: auto;
+  display: block;
+  background-color: rgb(202, 234, 255);
+}
+
+.message__chats > p {
+  font-size: 13px;
+}
+.message__chats .sender__name {
+  text-align: right;
+}
+.message__chats .message__sender {
+  background-color: rgb(194, 243, 194);
+  max-width: 300px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: auto;
+  font-size: 15px;
+}
+
+.message__recipient {
+  background-color: #f5ccc2;
+  width: 300px;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.message__status {
+  position: fixed;
+  bottom: 50px;
+  font-size: 13px;
+  font-style: italic;
+}
+
+.chat__sidebar {
+  height: 100%;
+  background-color: #f9f5eb;
+  flex: 0.15;
+  padding: 10px;
+  border-right: 1px solid #fdfdfd;
+}
+.chat__sidebar .chat__header {
+  margin: 30px 0 20px 0;
+}
+.chat__sidebar .chat__users > * {
+  margin-bottom: 10px;
+  color: #607eaa;
+  font-size: 14px;
+}
+
+.chat {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.chat__main {
+  margin: 0 auto;
+  height: 100%;
+  flex: 1;
+  border: 2px solid #b0b0b0;
+}
+
+.storeProducts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.cardHoverEffect {
+  transition: 0.3s;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.cardHoverEffect:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 255, 0.2), 0 10px 25px 0 rgba(24, 178, 255, 0.25);
+}
