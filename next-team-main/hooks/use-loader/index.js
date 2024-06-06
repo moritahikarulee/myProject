@@ -73,6 +73,7 @@ export const LoaderProvider = ({
         loading: show,
         delay,
         loader: () => <CustomLoader show={show} />,
+        // 這裡用回調函數的原因是，每次調用返回一個新 CustomLoader 元件
         // loaderText: (text) => <LoaderText text={text} show={show} />,
       }}
     >

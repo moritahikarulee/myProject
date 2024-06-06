@@ -14,6 +14,7 @@ import toast, { Toaster } from 'react-hot-toast'
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
 import Head from 'next/head'
+import style from '@/pages/shop/cart.module.css'
 
 export default function Profile() {
   const { checkAuth } = useAuth()
@@ -158,6 +159,29 @@ export default function Profile() {
         <title>會員中心 | DEAL-2ND HAND SHOP</title>
       </Head>
       <DefaultLayout>
+        {/* Breadcrumb Start */}
+        <div className={`container-fluid ${style.breadcrumbArea}`}>
+          <div className="row px-xl-5">
+            <div className="col-12">
+              <nav className="breadcrumb">
+                <Link
+                  className="breadcrumb-item text-dark"
+                  href="/"
+                  style={{ textDecoration: 'none' }}
+                >
+                  <span style={{ fontSize: '20px' }}>首頁</span>
+                </Link>
+                <span
+                  className="breadcrumb-item active"
+                  style={{ fontSize: '20px' }}
+                >
+                  會員中心
+                </span>
+              </nav>
+            </div>
+          </div>
+        </div>
+        {/* Breadcrumb End */}
         <section className={`${styles.profilesStyle}`}>
           <div className="container py-5">
             <div className="row">

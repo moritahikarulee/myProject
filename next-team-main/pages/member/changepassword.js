@@ -7,6 +7,8 @@ import { useAuth } from '@/context/auth-context'
 import { JWT_UPDATE_PASSWORD_PUT } from '@/components/config'
 import DefaultLayout from '@/components/common/default-layout'
 import Head from 'next/head'
+import style from '@/pages/shop/cart.module.css'
+import Link from 'next/link'
 
 export default function ChangePasswordPage() {
   const MySwal = withReactContent(Swal)
@@ -123,7 +125,37 @@ export default function ChangePasswordPage() {
         <title>更改密碼 | DEAL-2ND HAND SHOP</title>
       </Head>
       <DefaultLayout>
-        <div className="container d-flex justify-content-center mt-5 mb-3">
+        {/* Breadcrumb Start */}
+        <div className={`container-fluid ${style.breadcrumbArea}`}>
+          <div className="row px-xl-5">
+            <div className="col-12">
+              <nav className="breadcrumb">
+                <Link
+                  className="breadcrumb-item text-dark"
+                  href="/"
+                  style={{ textDecoration: 'none' }}
+                >
+                  <span style={{ fontSize: '20px' }}>首頁</span>
+                </Link>
+                <Link
+                  className="breadcrumb-item text-dark"
+                  href="/member/profile"
+                  style={{ textDecoration: 'none', fontSize: '20px' }}
+                >
+                  <span>會員中心</span>
+                </Link>
+                <span
+                  className="breadcrumb-item active"
+                  style={{ fontSize: '20px' }}
+                >
+                  更改密碼
+                </span>
+              </nav>
+            </div>
+          </div>
+        </div>
+        {/* Breadcrumb End */}
+        <div className="container d-flex justify-content-center mt-5 mb-5">
           <div className={`p-3 round ${styles.myloginform}`}>
             <form name="form1" onSubmit={handleSubmit}>
               <div className="mb-4">

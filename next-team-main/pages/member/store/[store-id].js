@@ -22,6 +22,7 @@ import { GET_STORE_LIKE_LIST } from '@/components/config'
 import RatingStars from '@/components/member/rating-stars'
 import StoreFollowModal from '@/components/member/store-follow-modal'
 import Head from 'next/head'
+import style from '@/pages/shop/cart.module.css'
 
 export default function StoreInfo() {
   const { auth, checkAuth } = useAuth()
@@ -240,6 +241,36 @@ export default function StoreInfo() {
         2.已登入且是自己的賣場，顯示回到個人檔案按鈕
         3.未登入，顯示追蹤和傳訊息按鈕，點擊後顯示請先登入提示
         */}
+        {/* Breadcrumb Start */}
+        <div className={`container-fluid ${style.breadcrumbArea}`}>
+          <div className="row px-xl-5">
+            <div className="col-12">
+              <nav className="breadcrumb">
+                <Link
+                  className="breadcrumb-item text-dark"
+                  href="/"
+                  style={{ textDecoration: 'none' }}
+                >
+                  <span style={{ fontSize: '20px' }}>首頁</span>
+                </Link>
+                <Link
+                  className="breadcrumb-item text-dark"
+                  href="/member/profile"
+                  style={{ textDecoration: 'none', fontSize: '20px' }}
+                >
+                  <span>會員中心</span>
+                </Link>
+                <span
+                  className="breadcrumb-item active"
+                  style={{ fontSize: '20px' }}
+                >
+                  賣場介紹
+                </span>
+              </nav>
+            </div>
+          </div>
+        </div>
+        {/* Breadcrumb End */}
         <section className={`${styles.storeInfo}`}>
           <div className="container py-5">
             <div className="row">
