@@ -4,10 +4,13 @@ import useFirebase from '@/hooks/use-firebase'
 import toast from 'react-hot-toast'
 import style from '@/styles/lee-form.module.scss'
 import { RiLogoutBoxRFill } from 'react-icons/ri'
+import { useRouter } from 'next/router'
 
 export default function LogoutButton() {
   const { logout, setAuth, initUserData } = useAuth()
   const { logoutFirebase } = useFirebase()
+  const router = useRouter()
+  // 使用 useLoader 鉤子
 
   const handleLogout = async (e) => {
     e.preventDefault() // 防止頁面跳轉
@@ -25,6 +28,8 @@ export default function LogoutButton() {
         isAuth: false,
         userData: initUserData,
       })
+
+      router.push('/')
     } else {
       toast.error(`登出失敗`)
     }
